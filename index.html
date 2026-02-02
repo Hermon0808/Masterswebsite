@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masters Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Masters Consultancy</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <main class="main-content">
+        <div class="content-card" id="content-card">
+            <h1>Welcome to Masters Consultancy</h1>
+            <p>Let's find the perfect Masters program for you. Start by answering a few questions.</p>
+            <button id="start-btn" class="btn">Get Started</button>
+        </div>
+    </main>
+
+    <!-- Modal for name validation -->
+    <div class="modal" id="validation-modal">
+        <div class="modal-content">
+            <p>Sorry, this experience is personalized 💌</p>
+            <button id="close-modal-btn" class="btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for final proposal -->
+    <div class="modal" id="proposal-modal">
+        <div class="modal-content large">
+            <p id="congrats-text">Congrats you just made it!!<br>Finding the best countries for you...</p>
+            <div id="message-container" class="hidden">
+                <p>Hi bbg, This is Heeru, I am very excited today to come up to you with this. I just wanted to say, you have been with me through thick and thin and I am truly blessed to have you as a major part of my life. This journey with you so far has been the greatest part of my life and I wish to travel with you till my last breath. Time flies when I am with you. Yet I am the happiest guy ever when I am around you. May God bless us through all our endeavours. And finally, I stand here to ask you with immense joy and pleasure…</p>
+                <p class="large-text">“Will you be my Valentine?? 💖”</p>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn yes-btn">YES</button>
+                    <button id="no-btn" class="btn no-btn">NO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
